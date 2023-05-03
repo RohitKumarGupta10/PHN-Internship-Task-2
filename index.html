@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+	<title>Engineering College Home Page</title>			
+<body>
+	<header>
+	</header>
+	<h1><b><i><u>WELCOME TO COLLEGE OF ENGINEERING</u></i></b></h1>
+	<nav>
+		<a href="#about Us">About us</a>
+		<a href="#department">Department</a>
+		<a href="#faculty">Faculty</a>
+		<a href="#research">Research</a>
+		<a href="#placement">Placement</a>
+		<a href="#contact">Contact us</a>
+		<a href="#" class="icon" onclick="toggleNav()">&#9776;</a>
+	</nav>
+
+<!-- Styling body and navigation bar-->	
+	<style>
+* {
+	margin: 0%;
+	padding:0%;
+}		
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-image: url(logo2.jpg);
+		}
+h1 {
+	font-size: 70px;
+	text-align: center;
+	color:rgb(153, 255, 0)
+}
+img {
+	border-radius: 100%;
+	margin-left: 30%;
+	margin-right: 30%;
+	display: inline;
+}
+nav::before {
+	content: "";
+}
+nav {
+	background-color: white;
+	padding: 10px;
+	overflow: hidden;
+	position: relative;
+	align-items:center;
+	margin-top: 1.5%;
+}
+		nav a {
+			display:inline;
+			float: left;
+			padding: 10px;
+			color: #444;
+			text-decoration: none;
+			font-weight: bold;
+			transition: all 0.6s ease;
+			font-size: 30px;
+			align-items: center;
+		}
+
+		nav a:hover {
+			background-color: #14aa00;
+			color: #fff;
+		}
+		nav .icon {
+			display: none;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			cursor: pointer;
+		}
+		
+		@media screen and (max-width: 768px) {
+			nav a:not(:first-child) {
+				display: none;
+			}
+			nav a.icon {
+				display: block;
+			}
+			nav.responsive a.icon {
+				background-color: #005daa;
+				color: #fff;
+			}
+			nav.responsive a {
+				display: block;
+				float: none;
+				text-align: center;
+				margin: 0;
+			}
+		}
+	</style>
+<!-- Adding JavaScript Code-->	
+
+	<script>
+		function toggleNav() {
+			var nav = document.querySelector('nav');
+			nav.classList.toggle('responsive');
+		}
+	</script>
+
+<!--Adding sections for diiferent parameters as mentioned in the task-->
+<section>
+     <h2>About Us</h2>
+     <p><b>Welcome to College Of Engineering, a premier institution for technical education. Our mission is to provide students with the knowledge and skills they need to succeed in their careers, while also fostering a love of learning and a commitment to service. Founded in 2004, our college has a long history of academic excellence and innovation, and we are proud to be a leader in the field of engineering education.</p>
+		<div class="row">
+			<div class="column">
+			  <img src="logo 5.jpg"  style="width:100%" height="98%">
+			</div>
+			<div class="column">
+			  <img src="logo4.jpg"  style="width:100%">
+			</div>
+			<div class="column">
+			  <img src="college1.jpg"  style="width:100%" height="98%">
+			</div>
+		  </div>
+		</section>
+		<section>
+     <h2>Department</h2>
+     <p>At  Engineering College, we offer a wide range of engineering programs to suit every student's interests and career goals. Our departments include:</p>
+     <ul>
+       <li>Computer Science Engineering</li>
+       <li>Electrical Engineering</li>
+       <li>Mechanical Engineering</li>
+       <li>Civil Engineering</li>
+	   <li>BioTechnology Engineering</li>
+	   <li>AIDS Engineering</li>
+     </ul>
+	 <img src="department.jpg" width="500px" height="300px">
+</section>
+
+<section>
+     <h2>Faculty</h2>
+     <p>Our faculty members are experts in their fields, and are dedicated to providing students with the highest quality education possible. They are passionate about teaching and research, and are committed to helping students achieve their goals.</p>
+     <ul>
+       <li>Dr. John Smith - Head of Department, Computer Science Engineering</li>
+       <li>Dr. Jane Doe - Associate Professor, Electrical Engineering</li>
+       <li>Dr. Robert Johnson - Professor, Mechanical Engineering</li>
+       <li>Dr. Sarah Lee - Assistant Professor, AIDS Engineering</li>
+       <li>Dr. Michael Brown - Professor, BioTechnology Engineering</li>
+	   <img src="faculty.jpg" width="500px" height="300px">
+     </ul>
+</section>
+
+<section>
+     <h2>Research</h2>
+     <p>At Engineering College, we are committed to advancing the field of engineering through cutting-edge research and innovation. Our faculty members and students are actively involved in a wide range of research projects, including:</p>
+     <ul>
+       <li>Developing new materials for use in construction and manufacturing</li>
+       <li>Designing more efficient energy systems</li>
+       <li>Creating new software and algorithms for use in computer science and artificial intelligence</li>
+       <li>Exploring new methods for environmental remediation and pollution control</li>
+    <img src="research.jpg" width="600px" height="300px">
+	</ul>
+</section>
+
+<section>
+     <h2>Placement</h2>
+	 <p>We are proud of our placement record, with many of our graduates going on to successful careers in top companies and organizations around the world. Our placement cell works closely with students to help them find the best job opportunities, and provides support and guidance throughout the job search process.</p>
+	<img src="placement.jpg" width="550px" height="300px">
+	</section>
+	
+	<section>
+     <h2>Contact Us</h2>
+     <p>If you have any questions or would like more information about Engineering College, please don't hesitate to get in touch. Our contact information is:</p>
+     <ul>
+       <li>Address: Engineering College, Pune, Maharashtra</li>
+       <li>Phone: +91 1234567890</li>
+       <li>Email: info@engineeringcollege.edu.in</li>
+     </ul>
+	 <img src="contact.jpg">
+</section>
+
+<!-- Styling section Starts Here-->
+<style>
+	.row {
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+img {
+	border-radius: 0%;
+	margin-right: 30%;
+	margin-left: 10%;
+}
+ section {
+	  margin: 20px;
+	  border: 10px solid #06d7e2;
+	  padding: 40px;
+	  background-color: #f7f7f7;
+	  margin-right: 15%;
+	  margin-top: 1.5%;
+    }
+    h2 {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 30px;
+        line-height: 1.5;
+        margin: 0 0 10px;
+		color:#db0b76;
+    }
+    ul {
+        font-size: 30px;
+        line-height: 1.5;
+        margin: 0 0 10px;
+        padding-left: 20px;
+		color: red;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+</style>
+</body>
+</html>
